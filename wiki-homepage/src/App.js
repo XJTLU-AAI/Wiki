@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import { SearchBox } from './SearchBox.js';
