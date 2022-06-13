@@ -38,10 +38,11 @@ jobs:
           
       - name: Prepare files for deployment
         run: |
-          ls
           mkdir pages-upload
-          mv wiki-homepage/build pages-upload/
-          mv site pages-upload/docs/
+          ls
+          cp -r site pages-upload/docs/
+          cp -r wiki-homepage/build/* pages-upload/
+          
           
       - name: Deploy to Github Pages
         uses: crazy-max/ghaction-github-pages@v3.0.0
