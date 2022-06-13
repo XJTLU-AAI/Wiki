@@ -34,7 +34,7 @@ jobs:
         run: |
           cd wiki-homepage
           npm install
-          npm build
+          npm run build
           
       - name: Prepare files for deployment
         run: |
