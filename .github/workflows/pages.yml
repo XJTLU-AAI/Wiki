@@ -20,14 +20,30 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
-
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: wiki.xjtlu.zone
-          #CONFIG_FILE: folder/mkdocs.yml
-          EXTRA_PACKAGES: build-base
-          # GITHUB_DOMAIN: github.myenterprise.com
-          #REQUIREMENTS: folder/requirements.txt
+        
+      - name: Build MkDocs
+        uses: Tiryoh/actions-mkdocs@v0.15.0
+        with:
+          # pip version of MkDocs
+          mkdocs_version: 1.3.0
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v3.3.0
+        
+      - name: Build React Homepage
+        run: |
+          cd wiki-homepage
+          npm install
+          npm build
+          
+      - name: Prepare files for deployment
+        run: |
+          mv wiki-homepage/build pages-upload/
+          mv site pages-upload/docs/
+          
+      - name: Deploy to Github Pages
+        uses: crazy-max/ghaction-github-pages@v3.0.0
+        with:
+          build_dir: pages-upload
+          
+    
