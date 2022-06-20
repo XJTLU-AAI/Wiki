@@ -15,7 +15,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="docs">Wiki</Nav.Link>
-              <Nav.Link href="#link">Zone</Nav.Link>
+              <Nav.Link href="https://xjtlu.zone">Zone</Nav.Link>
               <Nav.Link href="#link">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -47,12 +47,12 @@ function App() {
         display: 'flex',
         justifyContent: 'center',
       }}>
-        <ImageLink imageSrc="supporters/AAI.png" title="AAI" />
-        <ImageLink imageSrc="supporters/Astronomy.png" title="天文社"/>
-        <ImageLink imageSrc="supporters/HistoryClub.png" title="历史社"/>
-        <ImageLink imageSrc="supporters/AviationWings.png" title="航协"/>
-        <ImageLink imageSrc="supporters/CLCU.png" title="CLCU"/>
-        <ImageLink imageSrc="supporters/HMA_Kendo.png" title="剑术协会" />
+        <ImageLink imageSrc="supporters/AAI.png" />
+        <ImageLink imageSrc="supporters/Astronomy.png"/>
+        <ImageLink imageSrc="supporters/HistoryClub.png"/>
+        <ImageLink imageSrc="supporters/AviationWings.png"/>
+        <ImageLink imageSrc="supporters/CLCU.png"/>
+        <ImageLink imageSrc="supporters/HMA_Kendo.png" />
       </div>
     </div>
   );

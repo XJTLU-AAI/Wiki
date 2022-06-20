@@ -249,22 +249,22 @@ class SearchBox extends React.Component {
         //展示搜索历史
         return (
             <div>
-                <Tabs id="search-box-tab"
+                {/* <Tabs id="search-box-tab"
                     activeKey={this.state.mode}
                     onSelect={this.handleSearchModeChanged}>
                     <Tab eventKey="normal" title="普通模式" />
                     <Tab eventKey="academic" title="学术模式" />
-                </Tabs>
+                </Tabs> */}
                 <Form onSubmit={this.handleSearch}>
                     <Form.Group className='formGroup'>
                         <InputGroup className="mb-3">
-                            <DropdownButton as={InputGroup.Prepend}
+                            {/* <DropdownButton as={InputGroup.Prepend}
                                 onSelect={this.handleDropSearchEngineChanged}
                                 variant="search-drop"
                                 title={this.state.engineName}
                                 id="search-box-dropdown">
                                 {dropdownLists}
-                            </DropdownButton>
+                            </DropdownButton> */}
                             <Form.Control id="search-box-input"
                                 autoComplete='off'
                                 onChange={this.handleInputChange}

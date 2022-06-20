@@ -1,10 +1,15 @@
 
+.input-group {
+    justify-content: center;
+}
+
 #search-box-input {
     box-shadow: none;
+    max-width: 600px;
+    height: 40px;
 }
 
 #search-box-button {
-    border-top-right-radius: 0;
     background-color: #191e56;
 }
 
