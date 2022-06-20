@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="docs">
             <Image src='logo.png' style={{ width: 50}} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,12 +33,12 @@ function App() {
         display: 'flex',
         justifyContent: 'center',
       }}>
-        <ImageLink imageSrc="image1.png" title="学术资料" link="https://xjtlu.zone" />
-        <ImageLink imageSrc="image1.png" title="知识科普" link="https://www.xjtlu.edu.cn"/>
-        <ImageLink imageSrc="image1.png" title="史料库" link="https://baidu.com" />
-        <ImageLink imageSrc="image1.png" title="校园百科" link="https://xjtlu.zone" />
-        <ImageLink imageSrc="image1.png" title="建设中" link="https://xjtlu.zone" />
-        <ImageLink imageSrc="image1.png" title="建设中" link="https://xjtlu.zone" />
+        <ImageLink imageSrc="academic.png" title="学术资料" link="https://xjtlu.zone" />
+        <ImageLink imageSrc="knowledge_base.png" title="知识科普" link="https://www.xjtlu.edu.cn"/>
+        <ImageLink imageSrc="history.png" title="史料库" link="https://baidu.com" />
+        <ImageLink imageSrc="uni_knowledge_base.png" title="校园百科" link="https://xjtlu.zone" />
+        <ImageLink imageSrc="computer.png" title="计算机" link="https://xjtlu.zone" />
+        <ImageLink imageSrc="CCT.png" title="CCT" link="https://xjtlu.zone" />
       </div>
 
       <h4 style={{marginTop: 200}}>Supporter</h4>
