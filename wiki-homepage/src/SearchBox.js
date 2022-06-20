@@ -9,7 +9,7 @@ import React from 'react';
 import "./SearchBox.css"
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { Button, Dropdown, DropdownButton, Tabs, Tab } from 'react-bootstrap'
+import { Button, /*Dropdown, DropdownButton, Tabs, Tab*/ } from 'react-bootstrap'
 
 const arr_engineNormal = ["bing", "baidu", "google"];
 const arr_engineNormalName = ["必应", "百度", "谷歌"];
@@ -176,17 +176,17 @@ class SearchBox extends React.Component {
     }
 
     render() {
-        var dropdownLists = null;
-        if (this.state.mode === "normal") {
-            // dropdownLists =  arr_engineNormal
-            dropdownLists = arr_engineNormal.map((value, index) =>
-                <Dropdown.Item key={value} eventKey={value}>{arr_engineNormalName[index]}</Dropdown.Item>
-            );
-        } else if (this.state.mode === "academic") {
-            dropdownLists = arr_engineAcademic.map((value, index) =>
-                <Dropdown.Item key={value} eventKey={value}>{arr_engineAcademicName[index]}</Dropdown.Item>
-            );
-        }
+        // var dropdownLists = null;
+        // if (this.state.mode === "normal") {
+        //     // dropdownLists =  arr_engineNormal
+        //     dropdownLists = arr_engineNormal.map((value, index) =>
+        //         <Dropdown.Item key={value} eventKey={value}>{arr_engineNormalName[index]}</Dropdown.Item>
+        //     );
+        // } else if (this.state.mode === "academic") {
+        //     dropdownLists = arr_engineAcademic.map((value, index) =>
+        //         <Dropdown.Item key={value} eventKey={value}>{arr_engineAcademicName[index]}</Dropdown.Item>
+        //     );
+        // }
 
         var historyList = this.state.historyList;
         if (historyList === undefined) {
