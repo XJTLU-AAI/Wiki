@@ -22,8 +22,8 @@ function App() {
         </Container>
       </Navbar>
 
-      <h1 style={{ marginTop: 50, fontWeight: 'bold', fontSize: 50}}>wiki</h1>
-      <h2 style={{ fontSize: 14, fontWeight: 'bolder'}}>这里是大图书馆。</h2>
+      <h1 style={{ marginTop: 100, fontWeight: 'bold', fontSize: 66}}>wiki</h1>
+      <h2 style={{ fontSize: 20}}>这里是大图书馆</h2>
       <Container>
         <SearchBox />
         <br/>
@@ -37,11 +37,11 @@ function App() {
         <ImageLink imageSrc="knowledge_base.jpg" title="知识科普" link="https://www.xjtlu.edu.cn"/>
         <ImageLink imageSrc="history.jpg" title="史料库" link="https://baidu.com" />
         <ImageLink imageSrc="uni_knowledge_base.jpg" title="校园百科" link="https://xjtlu.zone" />
-        <ImageLink imageSrc="computer.jpg" title="计算机" link="https://xjtlu.zone" />
-        <ImageLink imageSrc="CCT.jpg" title="CCT" link="https://xjtlu.zone" />
+        <ImageLink imageSrc="under_construction.jpg" title="建设中" link="https://xjtlu.zone" />
+        <ImageLink imageSrc="under_construction.jpg" title="建设中" link="https://xjtlu.zone" />
       </div>
 
-      <h4 style={{marginTop: 200}}>Supporter</h4>
+      <h4 style={{marginTop: 120, fontSize: 17}}>Supporter</h4>
 
       <div className='supporters-nav' style={{
         display: 'flex',
