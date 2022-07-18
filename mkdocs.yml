@@ -2,6 +2,7 @@ site_name: XJTLU Wiki
 site_url: https://wiki.xjtlu.zone/docs/
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
 nav:
