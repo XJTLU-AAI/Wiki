@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -28,13 +28,13 @@ function App() {
         </Container>
       </Navbar>
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path='academic' element={<AcademicResources />} />
           <Route path='knowledge' element={<KnowledgeShare />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
     </div>
   );
@@ -54,12 +54,12 @@ function Home() {
         display: 'flex',
         justifyContent: 'center',
       }}>
-        <ImageLink imageSrc="academic.jpg" title="学术资料" link="academic" />
-        <ImageLink imageSrc="knowledge_base.jpg" title="知识科普" link="knowledge"/>
-        <ImageLink imageSrc="history.jpg" title="史料库" link="/" />
-        <ImageLink imageSrc="uni_knowledge_base.jpg" title="校园百科" link="/" />
-        <ImageLink imageSrc="under_construction.jpg" title="建设中" link="/" />
-        <ImageLink imageSrc="under_construction.jpg" title="建设中" link="/" />
+        <ImageLink imageSrc="academic.jpg" title="学术资料" link="#/academic" />
+        <ImageLink imageSrc="knowledge_base.jpg" title="知识科普" link="#/knowledge"/>
+        <ImageLink imageSrc="history.jpg" title="史料库" link="#" />
+        <ImageLink imageSrc="uni_knowledge_base.jpg" title="校园百科" link="#" />
+        <ImageLink imageSrc="under_construction.jpg" title="建设中" link="#" />
+        <ImageLink imageSrc="under_construction.jpg" title="建设中" link="#" />
       </div>
 
       <h4 style={{marginTop: 120, fontSize: 17}}>Supporter</h4>
