@@ -5,6 +5,8 @@ theme:
   custom_dir: overrides
   features:
     - navigation.tabs
+  palette:
+    primary: white
 nav:
   - 学术资料: 
     - CCT:
