@@ -28,7 +28,9 @@ jobs:
         uses: actions/setup-node@v3.3.0
 
       - name: Build
-        run: ./build.ps1
+        run: |
+          chmod u+x build.ps1
+          ./build.ps1
           
       - name: Deploy to Github Pages
         uses: crazy-max/ghaction-github-pages@v3.0.0
