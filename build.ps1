@@ -1,6 +1,8 @@
 $ErrorActionPreference = "Stop"
 
-Remove-Item -Recurse build
+if (Test-Path build) {
+    Remove-Item -Recurse build
+}
 New-Item -ItemType Directory build
 
 Write-Host "Building Homepage"
