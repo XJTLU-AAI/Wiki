@@ -12,7 +12,7 @@ cd ..
 Write-Host 
 
 Write-Host "Installing MkDocs dependencies"
-pip install -r .\requirements.txt
+pip install -r ./requirements.txt
 
 Write-Host "Building MkDocs (academic)"
 cd academic
