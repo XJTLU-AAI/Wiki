@@ -1,29 +1,29 @@
 $ErrorActionPreference = "Stop"
 
-rm -r build
-mkdir build
+Remove-Item -Recurse build
+New-Item -ItemType Directory build
 
 Write-Host "Building Homepage"
-cd .\wiki-homepage
+Set-Location .\wiki-homepage
 npm install
 npm run build
-cp -r build/* ../build/
-cd ..
+Copy-Item -Recurse build/* ../build/
+Set-Location ..
 Write-Host 
 
 Write-Host "Installing MkDocs dependencies"
 pip install -r ./requirements.txt
 
 Write-Host "Building MkDocs (academic)"
-cd academic
+Set-Location academic
 mkdocs build
-cp -r site ../build/docs/academic/
-cd ..
+Copy-Item -Recurse site ../build/docs/academic/
+Set-Location ..
 Write-Host 
 
 Write-Host "Building MkDocs (knowledge)"
-cd knowledge
+Set-Location knowledge
 mkdocs build
-cp -r site ../build/docs/knowledge/
-cd ..
+Copy-Item -Recurse site ../build/docs/knowledge/
+Set-Location ..
 Write-Host 
