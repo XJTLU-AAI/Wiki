@@ -28,6 +28,7 @@ jobs:
         uses: actions/setup-node@v3.3.0
 
       - name: Build
+        shell: pwsh
         run: |
           chmod u+x build.ps1
           ./build.ps1
