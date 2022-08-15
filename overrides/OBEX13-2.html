@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+<title>Custom title goes here</title>
+{% endblock %}
+
+{% block content %}
+<object data="./OBEX13.pdf" type="application/pdf">
+    <embed width="100%" style="height: 100vh;" src="./OBEX13.pdf" type="application/pdf" />
+</object>
+{% endblock %}

@@ -21,33 +21,22 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v2
         
-      - name: Build MkDocs
-        uses: Tiryoh/actions-mkdocs@v0.15.0
-        with:
-          # pip version of MkDocs
-          mkdocs_version: 1.3.0
+      - name: Setup Python
+        uses: actions/setup-python@v4.1.0
           
       - name: Setup Node.js
         uses: actions/setup-node@v3.3.0
-        
-      - name: Build React Homepage
+
+      - name: Build
+        shell: pwsh
         run: |
-          cd wiki-homepage
-          npm install
-          npm run build
-          
-      - name: Prepare files for deployment
-        run: |
-          mkdir pages-upload
-          ls
-          cp -r site pages-upload/docs/
-          cp -r wiki-homepage/build/* pages-upload/
-          
+          chmod u+x build.ps1
+          ./build.ps1
           
       - name: Deploy to Github Pages
         uses: crazy-max/ghaction-github-pages@v3.0.0
         with:
-          build_dir: pages-upload
+          build_dir: build
           fqdn: wiki.xjtlu.zone
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

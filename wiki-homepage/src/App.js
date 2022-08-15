@@ -89,8 +89,8 @@ function AcademicResources() {
         flexWrap: 'wrap',
         justifyContent: 'center',
       }}>
-        <ImageLink imageSrc="CCT.jpg" title="CCT" link="/docs/学术资料/CCT/c1" />
-        <ImageLink imageSrc="computer.jpg" title="计算机" link="docs/学术资料/计算机/c2"/>
+        <ImageLink imageSrc="CCT.jpg" title="CCT" link="/docs/academic/CCT/c1" />
+        <ImageLink imageSrc="computer.jpg" title="计算机" link="docs/academic/计算机/c2"/>
       </div>
     </div>
   )
@@ -104,13 +104,13 @@ function KnowledgeShare() {
         display: 'flex',
         justifyContent: 'center',
       }}>
-        <ImageLink imageSrc="/knowledge_base.jpg" title="大脑Project" link="/docs/知识科普/大脑Project/test" />
-        <ImageLink imageSrc="/knowledge_base.jpg" title="春秋历史" link="docs/知识科普/春秋历史/test"/>
-        <ImageLink imageSrc="/knowledge_base.jpg" title="人工智能" link="docs/知识科普/人工智能/test"/>
-        <ImageLink imageSrc="/knowledge_base.jpg" title="南斗天文" link="docs/知识科普/南斗天文/test"/>
-        <ImageLink imageSrc="/knowledge_base.jpg" title="西翼航空" link="docs/知识科普/西翼航空/test"/>
-        <ImageLink imageSrc="/knowledge_base.jpg" title="CLCU" link="docs/知识科普/CLCU/test"/>
-        <ImageLink imageSrc="/knowledge_base.jpg" title="剑术协会" link="docs/知识科普/剑术协会/test"/>
+        <ImageLink imageSrc="/knowledge_base.jpg" title="大脑Project" link="/docs/knowledge/大脑Project/test" />
+        <ImageLink imageSrc="/knowledge_base.jpg" title="春秋历史" link="docs/knowledge/春秋历史/test"/>
+        <ImageLink imageSrc="/knowledge_base.jpg" title="人工智能" link="docs/knowledge/人工智能/test"/>
+        <ImageLink imageSrc="/knowledge_base.jpg" title="南斗天文" link="docs/knowledge/南斗天文/test"/>
+        <ImageLink imageSrc="/knowledge_base.jpg" title="西翼航空" link="docs/knowledge/西翼航空/test"/>
+        <ImageLink imageSrc="/knowledge_base.jpg" title="CLCU" link="docs/knowledge/CLCU/test"/>
+        <ImageLink imageSrc="/knowledge_base.jpg" title="剑术协会" link="docs/knowledge/剑术协会/test"/>
       </div>
     </div>
   )

@@ -1,0 +1,20 @@
+site_name: XJTLU Wiki | 学术资料
+site_url: https://wiki.xjtlu.zone/docs/academic
+theme:
+  name: material
+  features:
+    - navigation.tabs
+
+extra:
+  homepage: https://wiki.xjtlu.zone
+
+plugins:
+  - search
+  - macros
+
+markdown_extensions:
+  - pymdownx.pathconverter:
+      base_path: 'docs/academic' # default: ''
+      relative_path: '' # default ''
+      absolute: true # default: false
+      tags: 'a script img link object embed'

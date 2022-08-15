@@ -1,0 +1,9 @@
+site_name: XJTLU Wiki | 知识科普
+site_url: https://wiki.xjtlu.zone/docs/knowledge
+theme:
+  name: material
+  features:
+    - navigation.tabs
+
+extra:
+  homepage: https://wiki.xjtlu.zone
