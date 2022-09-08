@@ -1,4 +1,6 @@
-# **AAI 人工智能社简介**
+# 简介
+
+## AAI 人工智能社
 
 ![](F:\Wiki\knowledge\docs\人工智能\AAI logo1.png)
 
