@@ -62,7 +62,7 @@ function Home() {
         <ImageLink imageSrc="under_construction.jpg" title="建设中" link="#" />
       </div>
 
-      <h4 style={{marginTop: 120, fontSize: 17}}>Supporter</h4>
+      <h4 style={{marginTop: 120, fontSize: 17}}>Supporters</h4>
 
       <div className='supporters-nav' style={{
         display: 'flex',
